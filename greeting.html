@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Greeting message</title></head>
+    <body>
+        <form>
+            <p>Enter name :</p>
+            <input id="input" type="text"  />
+            <button id="button">Click Me</button>
+            <p id="greet"></p>
+      </form>
+    </body>
+    <script>
+        let input = document.getElementById("input");
+        let button = document.getElementById("button");
+        let greet = document.getElementById("greet");
+
+    
+    button.addEventListener ("click", greetingUser);
+
+    function greetingUser() {
+
+        greet.textContent = `hello!, ${input.value}!`
+    }
+    </script>
+</html>
